@@ -1,0 +1,87 @@
+Build a production-ready, mobile-first single-page web application for "Happy Super Speciality Dental Clinic" in Machilipatnam using React, Tailwind CSS, and Lucide React icons.
+
+### 1. DESIGN & VISUAL REFERENCE MATCH (Pearlsmile Dental UI)
+The visual hierarchy, layout, and color palette MUST explicitly replicate the Pearlsmile Dental design on Dribbble:
+- Primary Dark Background (Hero & Navbar): Deep Ocean Teal (`#073549`)
+- Accent Color: Bright Cyan/Teal (`#2D8E9A`)
+- Card & Section Backgrounds: Light Slate/Gray (`#EBEAEC`)
+- Typography: High-contrast, clean sans-serif with bold headings.
+- Visual Layout Features:
+  - Hero section featuring split view with headline on left and curved dentist image cutout frame on right.
+  - "OUR SPECIALIZED SERVICES" grid layout using minimal iconography, titles, and card hover effects.
+  - "YOUR PATH TO A STRONGER SMILE" 3-step numbered pathway cards.
+  - Rating badge card overlay (e.g., "⭐ 4.8 / 5 Rating from local patient reviews").
+
+---
+
+### 2. LOCAL ASSET DIRECTORY HANDLING
+Look directly into the project's local `public/images/` directory for visual assets. Flexibly search and use available images from that folder:
+- Use images in `public/images/` for Dr. Ch. Tanuja MDS's hero picture, doctor profile, clinic reception/interior shots, and service cards.
+- If an exact image file is missing, automatically render a clean React SVG placeholder fallback with an appropriate dental icon so the page layout never breaks.
+- Add descriptive Local SEO `alt` tags to every image tag (e.g., `alt="Dr. Ch. Tanuja MDS - Lead Specialist at Happy Super Speciality Dental Clinic Machilipatnam"`).
+
+---
+
+### 3. STRICT INTERACTIVITY & MOBILE-FIRST ACTION BUTTONS
+Ensure there are no broken links or non-functional click handlers:
+- Direct Phone Dialing: All "Call Now" or phone buttons must trigger direct call dialing (`href="tel:+917675828833"` or provided clinic contact).
+- WhatsApp Integration: All "WhatsApp Us" buttons must launch a direct WhatsApp chat window (`href="https://wa.me/917675828833?text=Hello%20Happy%20Super%20Speciality%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment."`).
+- Interactive Booking Modal: All "Book Appointment", "Schedule Online", and "Book This Service" buttons must open a React state pop-up modal (`isBookingOpen`) featuring a clean appointment form (Name, Phone, Service Selection, Preferred Date).
+- Get Directions: Map link must open Google Maps (`href="https://maps.google.com/?q=Happy+Super+Speciality+Dental+Clinic+Machilipatnam"`).
+- Fixed Mobile Sticky Bar: Display a bottom sticky bar on mobile viewports (`md:hidden`) with 3 equal action pills: [ 📞 Call ] [ 💬 WhatsApp ] [ 📅 Book ].
+
+---
+
+### 4. LOCAL SEO & INJECTED SCHEMA (Machilipatnam Ranking)
+- Include HTML5 semantic elements (<header>, <nav>, <main>, <section>, <footer>).
+- Heading Hierarchy:
+  - H1: "Leading Super Speciality Dental Clinic in Machilipatnam"
+  - H2: "Pediatric Dentistry, Painless Root Canals & Implants in Buttaipet"
+- Inject JSON-LD Schema into head for Local Business / Dentist:
+  - Clinic Name: "Happy Super Speciality Dental Clinic"
+  - Doctor: "Dr. Ch. Tanuja, MDS"
+  - Address: "25/324, Buttaipeta, Opp. Bharat Gas Company, Beside Town Hall, Machilipatnam, AP - 521001"
+  - Rating: 4.8 / 5.0 (50+ Verified Local Patient Reviews)
+
+---
+
+### 5. PAGE CONTENT STRUCTURE
+
+1. Top Utility Header:
+   - Location: 📍 25/324, Buttaipeta, Opp. Bharat Gas Company, Beside Town Hall, Machilipatnam - 521001
+   - Quick Links: Direct Phone Call & WhatsApp Consult buttons.
+
+2. Navigation Bar:
+   - Brand Logo: "Happy Super Speciality Dental Clinic" with a clean Tooth Icon.
+   - Links: About Us, Services, Pediatric Care, Teledentistry, Contact Us.
+   - Action Button: "Schedule Appointment" (Cyan Pill Button).
+
+3. Hero Section (Pearlsmile Dual Frame):
+   - Badge: "★ Trusted Super Speciality Dental Care in Machilipatnam"
+   - Headline (H1): "Painless, Specialist Dental Care For Your Entire Family"
+   - Sub-headline: "Spearheaded by Dr. Ch. Tanuja (MDS). Delivering drill-free cavity sealants for kids, painless root canals, crowns, aligners, and dental implants."
+   - Action Buttons: "Book Appointment" (Opens Modal) & "WhatsApp Doctor" (External Link).
+   - Right Side: Framed image looking into `public/images/` for the doctor hero shot.
+
+4. "Our Specialized Services" Grid (6 Interactive Cards):
+   - Pediatric Dentistry (Drill-free sealants, cavity protection for children)
+   - Painless Root Canal Therapy (RCT) & Zirconia Protective Crowns
+   - Advanced Dental Implants (Natural tooth replacement)
+   - Sedation & Anesthesia Dentistry (Zero pain & anxiety-free procedures)
+   - Cosmetic Dentistry & Tooth-Colored Composite Fillings
+   - Teledentistry & Online Dental Consultations
+
+5. Patient Trust & Hygiene Highlights:
+   - 100% Hospital-Grade Autoclave Sterilization Protocols.
+   - MDS Specialist-Led Practice (Dr. Ch. Tanuja MDS & Team).
+   - Friendly Kid-Safe Dental Setup & Play Area.
+
+6. "Your Path to a Stronger Smile" (3-Step Pathway Cards):
+   - Step 01: Comprehensive Consultation / Online Teledentistry
+   - Step 02: Personalized & Painless Treatment Plan
+   - Step 03: Long-term Preventive Care & Oral Hygiene
+
+7. Footer & Contact Section:
+   - Detailed Address details for Buttaipeta, Machilipatnam.
+   - Embedded Google Maps location frame.
+   - Operating Hours, Quick Navigation, and Copyright notice.

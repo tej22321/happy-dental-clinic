@@ -1,0 +1,11 @@
+{
+  "name": "Happy Super Speciality Dental Clinic",
+  "short_name": "Happy Dental",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "theme_color": "#073549",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

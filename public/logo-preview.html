@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Logo Preview</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root { --ocean:#073549; --deep:#04161c; --teal:#2d8e9a; --mist:#ebeaec; --ink:#0f172a; --muted:#64748b; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Plus Jakarta Sans",system-ui,sans-serif; background:var(--mist); color:var(--ink); padding:32px 16px 64px; }
+  main { max-width:1080px; margin:0 auto; }
+  h1 { font-size:28px; margin:0 0 4px; color:var(--ocean); }
+  p.lead { margin:0 0 28px; color:var(--muted); }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--teal); margin:36px 0 12px; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  .card { background:#fff; border-radius:20px; padding:20px; text-align:center; }
+  .card small { display:block; margin-top:10px; color:var(--muted); font-size:12px; }
+  .card img { max-width:100%; height:auto; }
+  .checker { background-image:conic-gradient(#eee 25%,#fff 0 50%,#eee 0 75%,#fff 0); background-size:20px 20px; }
+  .sizes { display:flex; align-items:end; gap:28px; flex-wrap:wrap; justify-content:center; }
+  .sizes div { text-align:center; font-size:12px; color:var(--muted); }
+  .px { image-rendering:pixelated; }
+  .tabs { border-radius:20px; overflow:hidden; }
+  .bar { display:flex; gap:6px; padding:10px 10px 0; }
+  .tab { display:flex; align-items:center; gap:8px; padding:8px 14px; border-radius:10px 10px 0 0; font-size:13px; }
+  .light .bar { background:#dfe3e8; } .light .tab { background:#fff; }
+  .dark .bar { background:#202124; } .dark .tab { background:#35363a; color:#e8eaed; }
+  .nav { background:var(--ocean); border-radius:20px; padding:16px 20px; display:flex; align-items:center; gap:10px; color:#fff; }
+  .badge { width:44px; height:44px; border-radius:16px; background:#fff; padding:4px; display:grid; place-items:center; box-shadow:0 8px 20px rgba(45,142,154,.3); }
+  .nav b { display:block; font-size:15px; font-weight:800; } .nav span.s { font-size:12px; opacity:.7; }
+  .phone { width:120px; height:120px; border-radius:28px; overflow:hidden; display:inline-block; box-shadow:0 6px 18px rgba(0,0,0,.15); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Happy Dental — logo refresh</h1>
+  <p class="lead">I redrew the original logo as a clean vector and recoloured it to the site palette. The tiny curved text is gone, so the mark stays readable from 16&nbsp;px up to 512&nbsp;px.</p>
+
+  <h2>Before → after</h2>
+  <div class="grid">
+    <div class="card"><img src="images/logo.png" width="260" height="260" alt="Original logo" /><small>Original logo.png (500×500, mark ≈ 140 px, lots of empty space)</small></div>
+    <div class="card checker"><img src="logo-mark.svg" width="260" height="260" alt="New mark" /><small>New logo-mark.svg (vector, transparent, fills the frame)</small></div>
+    <div class="card"><img src="icon-512.png" width="260" height="260" alt="512 icon" /><small>icon-512.png (512×512, white tile, maskable-safe)</small></div>
+  </div>
+
+  <h2>Favicon sizes (actual pixels)</h2>
+  <div class="card sizes">
+    <div><img src="favicon.svg" width="16" height="16" alt="" /><br>16</div>
+    <div><img src="favicon.svg" width="32" height="32" alt="" /><br>32</div>
+    <div><img src="favicon.svg" width="48" height="48" alt="" /><br>48</div>
+    <div><img src="apple-touch-icon.png" width="90" height="90" alt="" /><br>180 (apple)</div>
+    <div><img src="icon-192.png" width="96" height="96" alt="" /><br>192</div>
+    <div><img src="favicon.svg" width="128" height="128" class="px" alt="" /><br>favicon at 8× zoom</div>
+  </div>
+
+  <h2>In context</h2>
+  <div class="grid">
+    <div class="tabs light"><div class="bar"><div class="tab"><img src="favicon.svg" width="16" height="16" alt="" />Happy Super Speciality…</div></div><div style="height:30px;background:#fff"></div></div>
+    <div class="tabs dark"><div class="bar"><div class="tab"><img src="favicon.svg" width="16" height="16" alt="" />Happy Super Speciality…</div></div><div style="height:30px;background:#35363a"></div></div>
+    <div class="nav"><span class="badge"><img src="logo-mark.svg" width="36" height="36" alt="" /></span><span><b>Happy Super Speciality</b><span class="s">Dental Clinic</span></span></div>
+    <div class="card"><span class="phone"><img src="apple-touch-icon.png" width="120" height="120" alt="" /></span><small>Home-screen icon (iOS / Android)</small></div>
+  </div>
+</main>
+</body>
+</html>
